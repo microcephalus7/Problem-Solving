@@ -1,5 +1,8 @@
 const number = Number(prompt());
 
-for (let i = 1; i < 10; i++) {
-  console.log(`${number} X ${i} = ${number * i}`);
+for (i = 1; i <= number; i++) {
+  for (j = 1; j <= i; j++) {
+    document.write("*");
+  }
+  document.write("\n");
 }
