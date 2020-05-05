@@ -11,3 +11,4 @@ for (let i = 1; i <= number; i++) {
   }
   result += "\n";
 }
+console.log(result);
