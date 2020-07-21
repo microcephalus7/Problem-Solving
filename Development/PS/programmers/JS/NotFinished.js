@@ -1,10 +1,9 @@
 function solution(participant, completion) {
   participant.sort();
   completion.sort();
-  for (let com in completion) {
-    return participant.filter((part) => part !== com);
+  for (let i = 0; i < participant.length; i++) {
+    if (participant[i] !== completion[i]) {
+      return participant[i];
+    }
   }
 }
-let part = ["leo", "kiki", "eden"];
-let comp = ["eden", "kiki"];
-console.log(solution(part, comp));
